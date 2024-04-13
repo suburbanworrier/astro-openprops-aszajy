@@ -1,0 +1,38 @@
+---
+// Component imports and setup JavaScript go here!
+---
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Welcome to Astro</title>
+	<style>
+		@import "open-props/style";
+		@import "open-props/normalize";
+		@import "open-props/buttons";
+		
+		/* scoped CSS styles go here: */
+		h1 {
+			opacity: 0;
+			animation: 
+				var(--animation-fade-in) forwards,
+				var(--animation-slide-in-up) forwards;
+			animation-timing-function: var(--ease-squish-3);
+		}
+
+		body {
+			display: grid;
+			place-content: center;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Welcome to <a href="https://astro.build/">Astro</a> and <a href="https://open-props.style">Open Props</a></h1>
+</body>
+
+</html>
